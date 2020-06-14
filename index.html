@@ -51,11 +51,11 @@ body {font-family: Arial, Helvetica, sans-serif;}
 <form class="form-inline">
 <div>
   <label for="email">宽度:</label>
-  <input id="w" placeholder="请输入宽度" required="required" name="w"> <span style="color:red">*</span>
+  <input id="w" placeholder="请输入宽度" name="w"> <span style="color:red">*</span>
 </div>
 <div>
   <label for="pwd">高度:</label>
-  <input id="h" placeholder="请输入高度" required="required" name="h"> <span style="color:red">*</span>
+  <input id="h" placeholder="请输入高度" name="h"> <span style="color:red">*</span>
 </div>
 
 
@@ -70,13 +70,13 @@ body {font-family: Arial, Helvetica, sans-serif;}
   </div>
 </form>
 <script>
+
+  document.getElementById('w').focus()
+function xxx(params) {
   var w = document.getElementById('w').value
   var h = document.getElementById('h').value
   var p = document.getElementById('p')
   var a = document.getElementById('a')
-  document.getElementById('w').focus()
-function xxx(params) {
-
   if (!w) {
     alert('宽度不能为空')
   } else {
